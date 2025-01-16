@@ -1,0 +1,11 @@
+/* Ẩn giá phụ biến thể */
+.woocommerce-variation-price {
+    display: none !important;
+}
+/*______________________________________________________________________________________________
+/* Ẩn link danh mục và dấu gạch chéo trong breadcrumb */
+.woocommerce-breadcrumb a[href*="product-category"],
+.woocommerce-breadcrumb span.divider,
+.woocommerce-breadcrumb nav.woocommerce-breadcrumb span {
+    display: none !important;
+}

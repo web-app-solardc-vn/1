@@ -1,0 +1,13 @@
+/* Thêm viền và màu cho tab trong trang tài khoản WooCommerce */
+.woocommerce-MyAccount-navigation ul li.is-active a {
+    background-color: #f2f2f2; /* Màu xám cho tab đang được chọn */
+    border: 1px solid #b0b0b0; /* Viền màu đen hơi xám */
+    border-radius: 6px; /* Làm cho các góc bo tròn */
+}
+
+.woocommerce-MyAccount-navigation ul li a { padding-left: 15px; /* Lùi chữ vào một chút */}
+
+/* Xóa thanh màu xanh khi hover */
+.woocommerce-MyAccount-navigation ul li a:before {
+    background-color: transparent !important;
+}

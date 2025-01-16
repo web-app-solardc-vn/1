@@ -1,0 +1,68 @@
+/* Thêm viền cho nút menu trên PC */
+.nav-top-link {
+    border-radius: 6px !important; /* Bo tròn góc của nút menu */
+    border: 1px solid #3b81bf !important; /* Viền của nút menu */
+}
+
+/*_______________________________________________________________________________________
+/* Điều chỉnh hiển thị tên sản phẩm ngoài cửa hàng */
+.woocommerce-loop-product__link {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important; /* Giới hạn hiển thị tối đa 2 dòng */
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important; /* Thêm dấu ba chấm ở cuối */
+    white-space: normal !important; /* Cho phép văn bản xuống dòng */
+    height: auto !important; /* Đảm bảo chiều cao tự động */
+    color: black !important; /* Cho tên sản phẩm sang màu đen */
+}
+
+
+/*_______________________________________________________________________________________
+/*thay đổi màu cam cho giá sản phẩm
+/* Áp dụng màu cam đậm cho giá bình thường */
+.woocommerce-Price-amount bdi {
+    color: #f55022!important; /* Màu cam đậm cho giá bình thường */
+    font-weight: bold; /* Chữ đậm */
+}
+
+/* Không thay đổi màu sắc cho giá sản phẩm giảm giá */
+.price ins .woocommerce-Price-amount bdi {
+    color: inherit !important; /* Kế thừa màu gốc cho giá giảm */
+}
+
+/* Không thay đổi màu sắc cho giá cũ (được gạch ngang) */
+.price del .woocommerce-Price-amount bdi {
+    color: inherit !important; /* Giữ nguyên màu mặc định của giá gạch ngang */
+}
+
+
+
+/*_______________________________________________________________________________________
+/* huy hiệu giảm giá 
+/* Điều chỉnh vị trí và kích thước badge */
+.badge-container {
+    transform: translate(-3.5%, -91%);
+}
+
+.badge {
+    font-size: 0.8em; /* Giảm kích thước chữ */
+    padding: 5px; /* Giảm kích thước padding */
+    border-radius: 8px; /* Bo góc */
+    overflow: hidden; /* Đảm bảo bo góc hoạt động */
+}
+
+.badge-inner {
+    padding: 5px 8px; /* Điều chỉnh padding để nhỏ gọn hơn */
+    border-radius: inherit; /* Kế thừa bo góc từ lớp cha */
+}
+
+/* Điều chỉnh kích thước chữ trong badge onsale */
+.onsale {
+    font-size: 0.75em; /* Giảm kích thước chữ bên trong */
+    display: block; /* Đảm bảo chữ tuân theo bo góc */
+}
+
+
+
+/*_______________________________________________________________________________________
